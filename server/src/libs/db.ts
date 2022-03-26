@@ -14,6 +14,5 @@ const dbOption = (): DynamoDBClientConfig => {
 };
 
 // connect to local DB if running offline
-
-const client = new DynamoDBClient(dbOption());
-export const doc = DynamoDBDocumentClient.from(client);
+export const db = new DynamoDBClient(dbOption());
+export const doc = DynamoDBDocumentClient.from(db);

@@ -9,14 +9,14 @@ const hello: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (
   event
 ) => {
   const param = new GetCommand({
-    TableName: "greeting",
+    TableName: "Todo",
     Key: {
       code: event.path.slice(1),
     },
   });
   const { Item } = await doc.send(param);
   return formatJSONResponse({
-    message: Item.content,
+    todo: Item,
     event,
   });
 };
