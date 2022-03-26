@@ -1,0 +1,10 @@
+[
+  {
+    "code": "hello",
+    "content": "Hello #user, welcome to the exciting Serverless world!"
+  },
+  {
+    "code": "goodbye",
+    "content": "Goodbye #user, you did a great job today!"
+  }
+]

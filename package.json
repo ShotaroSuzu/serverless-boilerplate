@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "test-server": "yarn workspace server test",
+    "deploy-server": "yarn workspace server deploy",
+    "remove-server": "yarn workspace server remove-remote",
+    "deploy-server-local": "yarn workspace server deploy-local"
+  },
+  "workspaces": [
+    "server"
+  ]
+}
