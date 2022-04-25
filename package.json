@@ -4,9 +4,20 @@
     "test-server": "yarn workspace server test",
     "deploy-server": "yarn workspace server deploy",
     "remove-server": "yarn workspace server remove-remote",
-    "deploy-server-local": "yarn workspace server deploy-local"
+    "deploy-server-local": "yarn workspace server deploy-local",
+    "fix:prettier": "prettier --write src",
+    "lint:prettier": "prettier --check server",
+    "fix": "run-s fix:prettier fix:eslint",
+    "fix:eslint": "eslint src --ext .ts --fix",
+    "lint": "run-p lint:prettier lint:eslint",
+    "lint:eslint": "eslint src --ext .ts"
   },
   "workspaces": [
     "server"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "2.6.1"
+  }
 }

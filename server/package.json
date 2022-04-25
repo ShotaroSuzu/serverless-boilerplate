@@ -4,7 +4,8 @@
   "description": "Serverless aws-nodejs-typescript template",
   "main": "serverless.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:unit": "jest -c jest.unit.config.ts",
     "deploy-server-local": "yarn sls offline",
     "deploy-db-local": "yarn sls dynamodb start",
     "deploy-local": "run-p -s deploy-db-local deploy-server-local",
@@ -29,6 +30,7 @@
     "cross-env": "5.0.5",
     "esbuild": "^0.14.11",
     "jest": "^27.5.1",
+    "jest-stare": "^2.3.0",
     "json-schema-to-ts": "^1.6.5",
     "serverless": "^3.0.0",
     "serverless-dynamodb-local": "^0.2.40",

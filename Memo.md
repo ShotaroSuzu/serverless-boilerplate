@@ -89,8 +89,8 @@
     - [NoSQL Workbench](https://docs.aws.amazon.com/ja_jp/amazondynamodb/latest/developerguide/workbench.settingup.html)を手順に従ってインストール
     - `Operation builder` を選択し、Add connectionで新たにコネクションを追加
     - `greeting` が追加されていればOK！
-  - TypeScript × DynamoDB は[こちら](https://maku.blog/p/5mv5dkt/)が非常に参考になる 
-- dynamodb-localとserverless-offlineの起動をしやすくする 
+  - TypeScript × DynamoDB は[こちら](https://maku.blog/p/5mv5dkt/)が非常に参考になる
+- dynamodb-localとserverless-offlineの起動をしやすくする
   - serverの`package.json` に `scripts` を追加し、`"deploy-server-local": "yarn sls offline"` と `"deploy-db-local": "yarn sls dynamodb start",`を追加する。
   - 1コマンドで実行できるように、`yarn add npm-run-all --dev` で `npm-run-all` をインストール
   - `scripts` に 上記をまとめて実行する `"deploy-local": "run-p -s deploy-db-local deploy-server-local"` を追加
@@ -146,10 +146,16 @@ const hello: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (
 
 
 ## 次のタスク
-- getAPIを作って、リクエストパラメータで名前を指定する
+- 開発環境の整備
+  - Jestの導入
+    - [ ] spectestを実行できるようにする
+- POSTの追加
+
+## 参考
+DynamoDB周りの参考：https://maku.blog/p/5mv5dkt/
 
 ## ゴール
 - 目先のゴール
-  - curlで挨拶をGET/POST/PUT/DELETEできるようにする
+  - curlでTODOをGET/POST/PUT/DELETEできるようにする
 - 最終的なゴール
-  - WEBの画面で挨拶を表示できるようにする
+  - TODO管理アプリのboilerplateを作る
