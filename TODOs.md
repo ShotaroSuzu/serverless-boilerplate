@@ -8,7 +8,14 @@
   - [ ] TODOテーブルを編集できるPUT(変更)APIを作る
   - [ ] TODOテーブルのアイテムを削除できるDELETEのAPIを作る
 - [ ] クライアント側
-  - [ ]
+  - [ ] Create React App でプロジェクトを作成
+  - [ ] MUIを導入
+  - [x] jestを導入
+  - [x] prettierを導入
+  - [x] eslintを導入
+  - [x] testing-libraryを導入
+  - [ ] cypressを導入
+  - [ ] パッケージ周りのwarningの解消
 
 ## 非機能
 - テストが実行できる状態にする

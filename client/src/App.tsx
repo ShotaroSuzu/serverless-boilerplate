@@ -1,25 +1,35 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {
+  Avatar,
+  Card,
+  CardContent,
+  CardHeader,
+  Grid,
+  Typography,
+} from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Grid container direction="column" spacing={2}>
+        <Grid item>
+          <Typography variant="h2">MUIテスト</Typography>
+        </Grid>
+        <Grid item>
+          <Card>
+            <CardHeader
+              avatar={<Avatar src="./logo" sx={{ width: 56, height: 56 }} />}
+              title="learn React"
+            ></CardHeader>
+            <CardContent>
+              <Typography variant="body1">I'll be a react expert.</Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Grid>
+    </>
   );
 }
 
