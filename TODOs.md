@@ -7,7 +7,8 @@
   - [ ] TODOテーブルに追加できるPOST(追加)APIを作る
   - [ ] TODOテーブルを編集できるPUT(変更)APIを作る
   - [ ] TODOテーブルのアイテムを削除できるDELETEのAPIを作る
-- [ ] クライアント側
+-  クライアント側
+  - 詳細は[client側のTODO参照](client/TODOs.md)
   - [ ] Create React App でプロジェクトを作成
   - [ ] MUIを導入
   - [x] jestを導入

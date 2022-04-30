@@ -13,7 +13,8 @@
     "lint:eslint": "eslint src --ext .ts"
   },
   "workspaces": [
-    "server"
+    "server",
+    "client"
   ],
   "devDependencies": {
     "eslint": "^8.12.0",
