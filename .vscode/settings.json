@@ -1,5 +1,14 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "cSpell.words": ["craco", "esbuild", "linebreak", "middyfy", "todos"]
+  "cSpell.words": [
+    "browserslist",
+    "craco",
+    "esbuild",
+    "linebreak",
+    "middyfy",
+    "pinst",
+    "postpack",
+    "todos"
+  ]
 }

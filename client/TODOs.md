@@ -1,12 +1,14 @@
 - Client側TODO
   - 環境構築
-    - [ ] Create React App でプロジェクトを作成
+    - [x] Create React App でプロジェクトを作成
     - [x] MUIを導入
     - [x] jestを導入
     - [x] prettierを導入
     - [x] eslintを導入
     - [x] testing-libraryを導入
-    - [ ] cypressを導入
-    - [ ] パッケージ周りのwarningの解消
+    - [x] cypressを導入
+    - [ ] Huskyを導入
+    - [ ] フォルダ構成をbulletproofに合わせる
+    - [ ] 実行コマンドの整理
   - 機能追加
-    -
+    - [ ]

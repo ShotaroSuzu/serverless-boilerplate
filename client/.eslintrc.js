@@ -3,13 +3,14 @@ module.exports = {
     browser: true,
     es2021: true,
     'jest/globals': true,
+    'cypress/globals': true,
   },
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
   ignorePatterns: ['node_modules/*'],
-  plugins: ['@typescript-eslint', 'jest'],
+  plugins: ['@typescript-eslint', 'jest', 'import', 'cypress', 'eslint-plugin-cypress'],
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx'],
@@ -26,6 +27,7 @@ module.exports = {
         'plugin:prettier/recommended',
         'plugin:testing-library/react',
         'plugin:jest-dom/recommended',
+        'plugin:cypress/recommended',
       ],
       rules: {
         'no-restricted-imports': [
@@ -40,15 +42,7 @@ module.exports = {
         'import/order': [
           'error',
           {
-            groups: [
-              'builtin',
-              'external',
-              'internal',
-              'parent',
-              'sibling',
-              'index',
-              'object',
-            ],
+            groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
             'newlines-between': 'always',
             alphabetize: { order: 'asc', caseInsensitive: true },
           },
