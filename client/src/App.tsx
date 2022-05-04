@@ -1,14 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {
-  Avatar,
-  Card,
-  CardContent,
-  CardHeader,
-  Grid,
-  Typography,
-} from '@mui/material';
+import { Avatar, Card, CardContent, CardHeader, Grid, Typography } from '@mui/material';
 
 function App() {
   return (

@@ -11,7 +11,8 @@
     "fix:eslint": "eslint src --ext .ts --fix",
     "lint": "run-p lint:prettier lint:eslint",
     "lint:eslint": "eslint src --ext .ts",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "prepare": "husky install"
   },
   "workspaces": [
     "server",
@@ -20,8 +21,13 @@
   "devDependencies": {
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.5.0",
-    "prettier": "2.6.1",
-    "husky": "^7.0.4",
-    "pinst": "^3.0.0"
+    "husky": "7.0.4",
+    "lint-staged": ">=10",
+    "pinst": "3.0.0",
+    "prettier": "2.6.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
