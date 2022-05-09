@@ -10,7 +10,7 @@ module.exports = {
     sourceType: 'module',
   },
   ignorePatterns: ['node_modules/*'],
-  plugins: ['@typescript-eslint', 'jest', 'import', 'cypress', 'eslint-plugin-cypress'],
+  plugins: ['jest', 'import', 'cypress', 'eslint-plugin-cypress'],
   overrides: [
     {
       files: ['**/*.ts', '**/*.tsx'],
@@ -20,7 +20,7 @@ module.exports = {
         'plugin:import/errors',
         'plugin:import/warnings',
         'plugin:import/typescript',
-        'plugin:@typescript-eslint/recommended',
+        // 'plugin:@typescript-eslint/recommended',
         'plugin:react/recommended',
         'plugin:react-hooks/recommended',
         'plugin:jsx-a11y/recommended',
@@ -42,7 +42,15 @@ module.exports = {
         'import/order': [
           'error',
           {
-            groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
+            groups: [
+              'builtin',
+              'external',
+              'internal',
+              'parent',
+              'sibling',
+              'index',
+              'object',
+            ],
             'newlines-between': 'always',
             alphabetize: { order: 'asc', caseInsensitive: true },
           },
