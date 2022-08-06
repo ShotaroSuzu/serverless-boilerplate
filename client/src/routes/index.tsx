@@ -1,6 +1,5 @@
 import { Navigate, useRoutes } from 'react-router-dom';
-
-import { Todos } from '@/features/todo';
+import { Todos } from 'features/todo/routes/Todos';
 
 export const AppRoutes = () => {
   const routes = [
