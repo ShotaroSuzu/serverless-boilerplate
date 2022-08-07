@@ -7,20 +7,27 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "lint": "eslint **/*.ts",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
     "@mui/icons-material": "^5.6.2",
-    "@mui/material": "^5.6.3",
+    "@mui/material": "^5.9.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.4.2",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
+    "jsdom": "^20.0.0",
     "prettier": "2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",

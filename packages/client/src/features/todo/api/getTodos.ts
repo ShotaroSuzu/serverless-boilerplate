@@ -1,6 +1,6 @@
 import { Todo } from '../types';
 
-const todosData: Todo[] = [
+export const todosData: Todo[] = [
   {
     id: '1',
     title: '牛乳を買う',
