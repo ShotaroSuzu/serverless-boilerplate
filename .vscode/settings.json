@@ -3,7 +3,6 @@
   "editor.formatOnSave": true,
   "cSpell.words": [
     "browserslist",
-    "craco",
     "esbuild",
     "linebreak",
     "middyfy",
@@ -18,6 +17,7 @@
     "typescript",
     "typescriptreact"
   ],
+  "eslint.workingDirectories": ["./packages/client", "./packages/server"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   }
